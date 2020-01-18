@@ -34,7 +34,7 @@ app.post('/obtenerNombre', (req, res) => {
   var name = req.body.name;
   var apellido = req.body.lastName;
 
-  res.send(`Hola ${name} ${apellido}. Como estas?`).status(200)
+  res.send(`Hola ${name} ${apellido} Como estas?`).status(200)
 })
 
 app.listen(8000,() => {
