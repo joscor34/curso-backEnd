@@ -43,6 +43,7 @@ app.post('/crearProducto', (req, res) => {
   producto.price = req.body.price
   producto.description = req.body.description
   producto.category = req.body.category
+  producto.img = req.body.img
 
   producto.save((err, prodcutSaved) => {
     if(err){
